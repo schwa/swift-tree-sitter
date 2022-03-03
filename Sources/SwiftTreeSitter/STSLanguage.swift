@@ -122,6 +122,7 @@ public class STSLanguage: Equatable, Hashable {
         case javascript = "javascript"
         case json = "json"
         case php = "php"
+        case cpp = "cpp"
 
 #if _XCODE_BUILD_
         public func bundle() throws -> Bundle {
@@ -165,6 +166,8 @@ public class STSLanguage: Equatable, Hashable {
             self.init(pointer: tree_sitter_json())
         case .php:
             self.init(pointer: tree_sitter_php())
+        case .cpp:
+            self.init(pointer: tree_sitter_cpp())
         }
 #endif
     }

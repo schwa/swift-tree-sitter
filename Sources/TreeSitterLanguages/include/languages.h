@@ -6,3 +6,4 @@ TSLanguage *tree_sitter_css();
 TSLanguage *tree_sitter_java();
 TSLanguage *tree_sitter_javascript();
 TSLanguage *tree_sitter_php();
+TSLanguage *tree_sitter_cpp();

@@ -18,6 +18,7 @@ class LanguageLoaderTests: XCTestCase {
         let _ = try STSLanguage(fromPreBundle: .javascript)
         let _ = try STSLanguage(fromPreBundle: .json)
         let _ = try STSLanguage(fromPreBundle: .php)
+        let _ = try STSLanguage(fromPreBundle: .cpp)
     }
     
 }
