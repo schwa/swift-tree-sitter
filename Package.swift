@@ -1,8 +1,12 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
   name: "SwiftTreeSitter",
+  platforms: [
+    .macOS(.v12),
+    .iOS(.v15)
+  ],
   products: [
     .library(name: "SwiftTreeSitter", targets: ["SwiftTreeSitter"]),
   ],
